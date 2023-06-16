@@ -36,4 +36,22 @@ public:
 		top--; // step 3
 	}
 
-	
+	//method for check if data is empty 
+	bool empty() {
+		return (top == -1);
+	}
+
+	void display() {
+		if (empty()) {
+			cout << "\nstack is empty" << endl;
+		}
+
+		else {
+			for (int tmp = top; tmp >= 0; tmp--) {
+				cout << stack_array[top] << endl;
+			}
+		}
+	}
+
+};
+
