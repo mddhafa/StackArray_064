@@ -75,3 +75,10 @@ int main() {
 			s.push(element);
 			break;
 		}
+		case '2':
+			if (s.empty()) {
+				cout << "\nStack is Empty." << endl;
+				break;
+			}
+			s.pop();
+		
